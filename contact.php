@@ -6,8 +6,8 @@ $to = 'melissa.j.richards@btinternet.com';
 
 $host = "ssl://smtp.gmail.com";
 $port = "465";
-$username = 'all4paws97@gmail.com';
-$password = 'Melissajayne22';
+$username = 'bfitbymj@gmail.com';
+$password = 'Melissajayne23';
 
 
 $subject = "Contact form submitted from website";
