@@ -1,0 +1,288 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #9B1A1A;
+}
+
+/*--- navigation bar ---*/
+.navbar {
+    background: #9B1A1A;
+}
+
+.navbar2 {
+    background: #9B1A1A;
+    color: #E1AD01;
+}
+
+.nav-link, .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+#index {
+    background-image: url('https://drive.google.com/uc?id=1Hq9aWyLj20iGpa9uXAly3mH-vFnRoxUO');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#about {
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    background-color: #fff;
+}
+
+#contact {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: #fff;
+}
+
+#personal {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: #fff;
+}
+
+#boxing {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: #fff;
+}
+
+#index-overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#about-overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+}
+
+#contact-overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    right: 0;
+}
+
+#personal-overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    right: 0;
+}
+
+#boxing-overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+
+.description h1 {
+    color: #E1AD01;
+}
+
+.description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.description #button {
+    border: 1px solid #E1AD01;
+    background: #E1AD01;
+    border-radius: 0;
+    color: #fff;
+}
+
+.description #button:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #000;
+}
+
+.personal {
+    text-align: center;
+}
+
+.section-about {
+    text-align: center;
+    position: absolute;
+    top: 15%;
+}
+
+h1, h2, h3, h6 {
+    color: #E1AD01;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.image img {
+    width: 400px;
+    height: 350px;
+    margin: auto;    
+    display: block;
+}
+
+.features {
+    margin: 1em auto;
+    padding 0.5em;
+    position: relative;
+}
+
+.feature-title {
+    color: #E1AD01;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.features img {
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    -mox-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+}
+
+i:hover{
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+  border-color: #fff;
+  background: rgba(255,255,255,0.05);
+  -webkit-transform: scale(0.93);
+  -moz-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93);
+}   
+
+.social {
+    color: #fff;
+}
+
+#insta{
+  background: #B2497D; 
+  border: 2px solid #fff;
+  border-radius: 4px;
+  margin-right: 5px;
+  text-align: right;
+  padding: 15px 17px !important;
+}
+
+#fb {
+    background: #3B5998; 
+    border: 2px solid #fff;
+    border-radius: 4px;
+    margin-right: 5px;
+    text-align: right;
+    padding: 15px 17px !important;
+}
+
+.center2 {
+   text-align: center;
+    margin-left: 25em
+}
+
+.center3{
+    text-align: center;
+    margin-left: 30em
+}
+
+.center {
+    text-align: center;
+    margin-left: 8em
+}
+
+.review-btn {
+    background-color: #E1AD01;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.reviews {
+    color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.boxing {
+    text-align: center;
+    text-indent: 50px;
+    line-height: 1.8;
+    word-spacing: 4px;
+    direction: ltr;
+    font-size: 20px;
+	font-family: Arial, "sans-serif";
+}
+
+.special {
+    text-align: center;
+    text-indent: 50px;
+    line-height: 1.5;
+    word-spacing: 1px;
+    direction: ltr;
+    font-size: 15px;
+	font-family: Arial, "sans-serif";
+}
