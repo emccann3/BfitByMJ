@@ -1,8 +1,9 @@
 <?php
 require_once "Mail.php";
 
-$from = "all4paws97@gmail.com";
-$to = 'melissa.j.richards@btinternet.com';
+$from = "bfitbymj@gmail.com";
+$cc = $_POST['email'];
+$to = 'bfitbymj@gmail.com';
 
 $host = "ssl://smtp.gmail.com";
 $port = "465";
@@ -20,7 +21,9 @@ $okMessage = 'contact form successfully submitted. Thank you, I will get back to
 
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 
-$headers = array ('From' => $from, 'To' => $to,'Subject' => $subject);
+$recipients = $to.", ".$cc;
+
+$headers = array ('From' => $from, 'To' => $to,'Subject' => $subject, 'Cc' => $cc);
 $smtp = Mail::factory('smtp',
 array ('host' => $host,
 'port' => $port,
@@ -28,7 +31,7 @@ array ('host' => $host,
 'username' => $username,
 'password' => $password));
 
-$mail = $smtp->send($to, $headers, $body);
+$mail = $smtp->send($recipients, $headers, $body);
 ?>
 <!DOCTYPE html>
 <html>
@@ -47,6 +50,7 @@ $mail = $smtp->send($to, $headers, $body);
     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
        <span class="navbar-toggler-icon"></span>
       </button>
+         <h2 class="center">BFit By MJ</h2>
     <div class="collapse navbar-collapse" id="main-navigation">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -56,10 +60,7 @@ $mail = $smtp->send($to, $headers, $body);
            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-           <a class="nav-link" href="#">Personal Training</a>
-          </li>
-          <li class="nav-item">
-           <a class="nav-link" href="#">Tips</a>
+           <a class="nav-link" href="personalTraining.html">Personal Training</a>
           </li>
           <li class="nav-item">
            <a class="nav-link" href="contact.html">Contact Us</a>
@@ -76,7 +77,7 @@ $mail = $smtp->send($to, $headers, $body);
     <h2>Thank You!</h2>
     <p>Your message has been sent</p>
     <p>We aim to reply within 24 hours</p>
-    <img src="https://drive.google.com/uc?id=1deqqHnAmdUfRe2v2l-Q1QrReBG1hQgq9" width="440" height="370">
+    <img src="https://drive.google.com/uc?id=1ZzULjU4bldHGC5F0MfE-fZnFjyivo-zw" width="440" height="470">
         <?php } ?>
         </div>
     </header>
